@@ -1,0 +1,181 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Myriad Pro';
+font-family: 'Gotham';
+*/
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(fonts/myriadpro.otf);
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(fonts/gotham-black.otf);
+}
+
+body {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background: url(img/header/header.png) no-repeat;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-size: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recs {
+    position: relative;
+}
+
+.rec1 {
+    width: 67px;
+    height: 67px;
+    background-color: white;
+    opacity: .75;
+}
+
+.rec2 {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30.46px;
+    color: #fff;
+    width: 67px;
+    height: 67px;
+    background-color: #11749e;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: -8px;
+    right: 12px;
+}
+
+.header_nav__links {
+    display: flex;
+}
+
+.header_nav__site {
+    margin-right: 20px;
+}
+
+.header__site__links {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Myriad Pro';
+    margin-right: 48px;
+    font-size: 20px;
+    transition: .1s border-bottom linear;
+}
+
+.header__site__links:hover {
+    padding-bottom: 30px;
+    border-bottom: 6px#11749e solid;
+}
+
+.header__site__links:nth-child(6) {
+    margin-right: 50px;
+}
+
+.fab {
+    color: white;
+    margin-right: 32px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.fab:nth-child(4) {
+    margin-right: 0;
+}
+
+.fa-facebook-f {
+    transition: .1s color linear;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998; 
+}
+
+.fa-twitter {
+    transition: .1s color linear;
+}
+
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-skype {
+    transition: .1s color linear;
+}
+
+
+.fa-skype:hover {
+    color: #00aff0;
+}
+
+.fa-linkedin-in {
+    transition: .1s color linear;
+}
+
+
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+.header__title {
+    text-align: center;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-size: 152.54px;
+    margin-top: 272px;
+    padding-bottom: 173px;
+}
+
+.header__scroll {
+    text-align: center;
+}
+
+.header__scroll_text {
+    font-family: 'Open Sans', sans-serif;
+    color: #c7c7c6;
+    font-size: 13px;
+    margin-bottom: 23px;
+}
+
+.header__scroll_round {
+    align-items: center;
+    display: inline-grid;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    border: 1px#f4f3f3 solid;
+}
+
+.fa-chevron-down { 
+    position: relative;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1280px) {
+    .header__site__links {
+        font-size: 15px;
+    }
+}
